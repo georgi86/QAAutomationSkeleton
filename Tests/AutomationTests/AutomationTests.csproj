@@ -59,12 +59,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\DataReader.cs" />
+    <Compile Include="DemoQARegistrationTests.cs" />
     <Compile Include="DemoQASortableTests.cs" />
     <Compile Include="DemoQASelectableTests.cs" />
     <Compile Include="DemoQAResizeableTests.cs" />
     <Compile Include="DemoQADroppableTests.cs" />
     <Compile Include="DemoQADraggableTests.cs" />
+    <Compile Include="Models\RegistrationUser.cs" />
     <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\RegistrationPage\RegistrationPage.cs" />
+    <Compile Include="Pages\RegistrationPage\RegistrationPageAssert.cs" />
+    <Compile Include="Pages\RegistrationPage\RegistrationPageConstants.cs" />
+    <Compile Include="Pages\RegistrationPage\RegistrationPageMap.cs" />
     <Compile Include="Pages\SortablePage\SortablePage.cs" />
     <Compile Include="Pages\SortablePage\SortablePageAsserter.cs" />
     <Compile Include="Pages\SortablePage\SortablePageConstants.cs" />
@@ -90,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Data\DataSource.xlsx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

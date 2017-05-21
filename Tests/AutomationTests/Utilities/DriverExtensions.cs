@@ -22,6 +22,11 @@
 
         public static void ClickOnElements(this List<IWebElement> elements, string data)
         {
+            if (data == null)
+            {
+                return;
+            }
+
             var conditions = data.Split(',').Select(int.Parse).ToList();
 
             for (int i = 0; i < conditions.Count; i++)
