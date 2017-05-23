@@ -21,7 +21,6 @@
         {
             get
             {
-                this.wait.Until(ExpectedConditions.ElementExists(By.Id(Constants.DEFAULT_TAB_SELECTOR)));
                 return this.driver.FindElement(By.Id(Constants.DEFAULT_TAB_SELECTOR));
             }
         }
@@ -29,8 +28,7 @@
         public IWebElement AcceptTab
         {
             get
-            {
-                this.wait.Until(ExpectedConditions.ElementExists(By.Id(Constants.ACCEPT_TAB_SELECTOR)));
+            {               
                 return this.driver.FindElement(By.Id(Constants.ACCEPT_TAB_SELECTOR));
             }
         }
@@ -38,8 +36,7 @@
         public IWebElement PreventPropagationTab
         {
             get
-            {
-                this.wait.Until(ExpectedConditions.ElementExists(By.Id(Constants.PREVENT_PROPAGATION_TAB_SELECTOR)));
+            {               
                 return this.driver.FindElement(By.Id(Constants.PREVENT_PROPAGATION_TAB_SELECTOR));
             }
         }
@@ -47,8 +44,7 @@
         public IWebElement RevertDraggablePossitionTab
         {
             get
-            {
-                this.wait.Until(ExpectedConditions.ElementExists(By.Id(Constants.REVERT_DRAGGABLE_POSITION_TAB_SELECTOR)));
+            {                
                 return this.driver.FindElement(By.Id(Constants.REVERT_DRAGGABLE_POSITION_TAB_SELECTOR));
             }
         }
@@ -56,8 +52,7 @@
         public IWebElement ShoppingCartTab
         {
             get
-            {
-                this.wait.Until(ExpectedConditions.ElementExists(By.Id(Constants.SHOPING_CART_DEMO_TAB_SELECTOR)));
+            {                
                 return this.driver.FindElement(By.Id(Constants.SHOPING_CART_DEMO_TAB_SELECTOR));
             }
         }

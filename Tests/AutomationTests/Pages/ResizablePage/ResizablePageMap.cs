@@ -18,8 +18,7 @@
         public IWebElement DefaultTab
         {
             get
-            {
-                this.wait.Until(ExpectedConditions.ElementExists(By.Id(Constants.DEFAULT_TAB_SELECTOR)));
+            {                
                 return this.driver.FindElement(By.Id(Constants.DEFAULT_TAB_SELECTOR));
             }
         }
@@ -27,8 +26,7 @@
         public IWebElement ConstraintResizeTab
         {
             get
-            {
-                this.wait.Until(ExpectedConditions.ElementExists(By.Id(Constants.CONSTRAINT_RESIZE_TAB_SELECTOR)));
+            {                
                 return this.driver.FindElement(By.Id(Constants.CONSTRAINT_RESIZE_TAB_SELECTOR));
             }
         }
@@ -36,8 +34,7 @@
         public IWebElement MinMaxSizeTab
         {
             get
-            {
-                this.wait.Until(ExpectedConditions.ElementExists(By.Id(Constants.MIN_MAX_SIZE_TAB_SELECTOR)));
+            {                
                 return this.driver.FindElement(By.Id(Constants.MIN_MAX_SIZE_TAB_SELECTOR));
             }
         }

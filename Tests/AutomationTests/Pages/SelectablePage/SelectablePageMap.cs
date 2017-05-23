@@ -19,8 +19,7 @@
         public IWebElement DefaultTab
         {
             get
-            {
-                this.wait.Until(ExpectedConditions.ElementExists(By.Id(Constants.DEFAULT_TAB_SELECTOR)));
+            {               
                 return this.driver.FindElement(By.Id(Constants.DEFAULT_TAB_SELECTOR));
             }
         }
@@ -28,8 +27,7 @@
         public IWebElement DisplayAsGridTab
         {
             get
-            {
-                this.wait.Until(ExpectedConditions.ElementExists(By.Id(Constants.DISPLAY_AS_GRID_TAB_SELECTOR)));
+            {                
                 return this.driver.FindElement(By.Id(Constants.DISPLAY_AS_GRID_TAB_SELECTOR));
             }
         }
@@ -37,8 +35,7 @@
         public IWebElement SerializeTab
         {
             get
-            {
-                this.wait.Until(ExpectedConditions.ElementExists(By.Id(Constants.SERIALIZE_TAB_SELECTOR)));
+            {                
                 return this.driver.FindElement(By.Id(Constants.SERIALIZE_TAB_SELECTOR));
             }
         }
